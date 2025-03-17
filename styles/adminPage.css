@@ -1,0 +1,335 @@
+body {
+    background: linear-gradient(
+        rgb(188, 188, 188), 
+        rgb(234, 208, 195)
+        ) fixed;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.admin-panel-section {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.admin-panel {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.150);
+}
+
+form {
+    background-color: none;
+}
+
+textarea {
+    font-family: "Montserrat", sans-serif;
+	width: 400px;
+	max-width: 400px;
+	min-width: 400px;    
+	height: 150px;
+    border: 1px solid black;
+    resize: none;
+}
+
+input {
+    font-family: "Montserrat", sans-serif;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+::placeholder {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #00000050;
+}
+
+.public-block button {
+    width: 250px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ffa268;
+    cursor: pointer;
+}
+.public-block button:hover {
+    color: black;
+}
+.public-block button:active {
+    color: white;
+}
+
+.loadImage-block #LoadImage {
+    width: 200px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ffa268;
+    cursor: pointer;
+}
+.loadImage-block #LoadImage:hover {
+    color: black;
+}
+.loadImage-block #LoadImage:active {
+    color: white;
+}
+.loadImage-block #RemoveImage {
+    width: 200px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ff6868;
+    cursor: pointer;
+}
+.loadImage-block #RemoveImage:hover {
+    color: black;
+}
+.loadImage-block #RemoveImage:active {
+    color: white;
+}
+
+.image-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 420px;
+    height: 200px;
+    border: 1px dashed #00000045;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+.image-block img {
+    max-width: 420px;
+    max-height: 200px;
+}
+.loadImage-block {
+    margin-bottom: 10px;
+}
+.loadImage-block button i {
+    font-weight: 800;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.url-image-block {
+    margin-bottom: 10px;
+}
+.name-block {
+    margin-bottom: 10px;
+}
+.desc-block {
+    margin-bottom: 10px;
+}
+.country-block {
+    margin-bottom: 10px;
+}
+.public-block {
+    margin-bottom: 10px;
+}
+
+.delete-ex-id-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.delete-ex-button-block {
+    content: '';
+}
+form a i {
+    margin-left: 5px;
+    font-size: 13px;
+}
+form a {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+form a:hover {
+    color: #ffa268;
+}
+form a:active {
+    color: black;
+}
+
+.delete-ex-link-a a {
+    width: 200px;
+    height: 10px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+.delete-ex-link-a a:hover {
+    color: #ff6868;
+}
+.delete-ex-link-a a:active {
+    color: black;
+}
+/*----------Окно с паролем---------*/
+.password-block {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+.password-win {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.181);
+}
+
+.password-win input {
+    font-family: "Montserrat", sans-serif;
+    width: 180px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.password-win button {
+    width: 250px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ffa268;
+    cursor: pointer;
+}
+.password-win button:hover {
+    color: black;
+}
+.password-win button:active {
+    color: white;
+}
+.password-win .gohome i {
+    margin-left: 5px;
+    font-size: 13px;
+}
+.password-win .gohome {
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 13px;
+}
+.password-win .gohome:hover {
+    color: #ffa268;
+}
+.password-win .gohome:active {
+    color: black;
+}
+
+.pb-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        rgb(188, 188, 188), 
+        rgb(234, 208, 195)
+        );
+}
+
+.success_message {
+    color: black;
+    font-weight: 600;
+    font-size: 40;
+    text-align: center;
+}
+
+.success_message-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: 20px;
+    width: 400px;
+    height: 150px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #00000050;
+}
+
+.delete-ex-button-block button {
+    width: 200px;
+    height: 40px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: white;
+    border: none;
+    background-color: #ff6868;
+    cursor: pointer;
+}
+.delete-ex-button-block button:hover {
+    color: black;
+}
+.delete-ex-button-block button:active {
+    color: white;
+}
+.delete-ex-id-block button {
+    width: 195px;
+    height: 30px;
+    margin-left: 5px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: black;
+    border: none;
+    background-color: #ffd268;
+    cursor: pointer;
+}
+.delete-ex-id-block button:hover {
+    background-color: #5fea66;
+    color: white;
+}
+.delete-ex-id-block button:active {
+    background-color: #ffd268;
+}
+#deleteForm {
+    display: none;
+    flex-direction: column;
+}
