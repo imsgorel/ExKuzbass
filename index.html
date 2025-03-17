@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЭксКузбасс</title>
+    <link href="./styles/home.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ----------------------------------------- ШАПКА САЙТА --------------------------------------------------------- -->
+    <div class="head-backplate"></div>
+    <div class="head">
+        <div id="headbtn1" class="head-btn-underline"><a class="head-btn" href="index.html">Главная</a><div></div></div>
+        <div id="headbtn2" class="head-btn-underline"><a class="head-btn" href="excursions.php">Экскурсии</a><div></div></div>
+    </div>
+
+<!-- ----------------------------------------- ЗАГОЛОВОК И ОПИСАНИЕ --------------------------------------------------------- -->
+    <section class="header">
+        <div class="black-back">
+
+            <div class="header-text-blocks">
+                <div class="header-items">
+
+                    <div class="StartPageAnimation-1">
+                        <div class="text-desc-block-1">
+                            <a class="text-desc"><span style="color: #ffa268;">Экс</span>Кузбасс</a>
+                        </div>
+                        <div class="tdb2">
+                            <div class="text-desc-block-2">
+                                <a class="text-desc-2">Кемеровская область (Кузбасс) — субъект Российской Федерации, расположенный на юге Западной Сибири.</a> 
+                                <a class="text-desc-2">Входит в состав Сибирского федерального округа, является частью</a>
+                                <a class="text-desc-2">Западно-Сибирского экономического района.</a>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+            
+            <div class="GoExButton">
+                <div class="startEx-button" id="StartExButton">
+                    <a>Что это?</a>
+                </div>
+            </div>
+            
+            <div class="triangle-down"></div>
+
+        </div>
+    </section>
+
+<!-- ----------------------------------------- ОСНОВА САЙТА 1 --------------------------------------------------------- -->
+    <section class="main-block-1" id="MainBlock-1">
+        <div class="site-desc-block" id="SiteDescBlock">
+
+            <div class="descImgBlock">
+
+                <div class="sub-desc-block-1">
+                    <div class="sdb-1-text">
+                        <h2 id="what">Что такое ЭксКузбасс?</h2>
+                        <div id="DESC_BLOCK_1">
+                            <a>Это проект, который занимается показом красивых мест и достопримечательностей Кузбасса.</a>
+                            <a>Наш проект направлен на то, чтобы как можно больше людей увидели все красоты Кемеровской Области.</a>
+                        </div>
+                        <div class="DownButtonBlock">
+                            <button id="down-button">
+                                <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sub-desc-block-2">
+                    <div class="sdb-block-1">
+                        <div class="desc-img" id="DescriptionImage1"></div>
+                        <div class="desc-img" id="DescriptionImage2"></div>
+                    </div>
+                    <div class="sdb-block-sub"></div>
+                    <div class="sdb-block-2">
+                        <div class="desc-img" id="DescriptionImage3"></div>
+                        <div class="desc-img" id="DescriptionImage4"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="just-white-plate"></div>
+<!-- ----------------------------------------- ОСНОВА САЙТА 2 --------------------------------------------------------- -->
+<section class="main-block-2" id="MainBlock-2">
+    <div class="info-block">
+
+        <div class="mb2-info-block">
+            <div class="mb2-image-box">
+                <div class="sheregesh-mountains"></div>
+            </div>
+            <div class="mb2-desc-box">
+                <div class="mb2db-text">
+                    <h1>Например</h1>
+                    <a><span style="font-weight: 600;">Гряда скал-останцев Верблюды</span> - обворожительные скалы, находящиеся в Шерегеше</a>
+                </div>
+            </div>
+        </div>
+        <div class="ForAnimation1"></div>
+
+    </div>
+</section>
+<!-- ----------------------------------------- ОСНОВА САЙТА 3 --------------------------------------------------------- -->
+<section class="main-block-3">
+    <div class="mb-3">
+        <h1>Интересно?</h1>
+        <a>Тогда давайте начнем небольшое путешествие!</a>
+        
+        <div class="startEx-button-2" onclick="goToExPage()">
+            <a id="StartGoExBtn">Начать!</a>
+        </div>
+    </div>
+
+    <a class="footer-text">Сайт был сделан для Курсовой работы студентом Орехов Д.В. группы ИСиП-22</a>
+    <a class="footer-text">ГПОУ Юргинский Техникум Машиностроения и Информационных Технологий, г. Юрга</a>
+    <a id="GoToAdminPanel" class="footer-text" onclick="goToAdminP()">
+        <i class="fa fa-link" aria-hidden="true"></i>Перейти на Админ-Панель
+    </a>
+</section>
+
+    <script src="./scripts/home.js"></script>
+</body>
+</html>
