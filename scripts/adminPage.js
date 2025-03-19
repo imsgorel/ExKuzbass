@@ -29,8 +29,9 @@ document.getElementById('RemoveImage').addEventListener('click', function() {
 //-----------------------------------------------------------------------
 document.getElementById('authButtonAdmin').addEventListener('click', function() {
     const inputCode = document.getElementById('inputPasswordAdmin').value;
+    const password = document.getElementById('passConst').value;
 
-            if (inputCode === '123') {
+            if (inputCode === password) {
                 document.getElementById('passwordBlock').style.display = 'none';
                 document.getElementById('AdminSection').style.display = 'flex';
                 document.getElementById('PasswordBlock-Background').style.display = 'none';
@@ -44,6 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const deleteExLink = document.getElementById('deleteExLink');
     const deleteForm = document.getElementById('deleteForm');
     const adminPanel = document.getElementById('adminPanel');
+    const gohome1 = document.getElementById('gohome1');
+    const gohome2 = document.getElementById('gohome2');
 
     if (deleteExLink && deleteForm && adminPanel) {
         deleteExLink.addEventListener('click', function(event) {
@@ -57,10 +60,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 adminPanel.style.height = '900px';
                 deleteForm.style.display = 'flex';
                 deleteExLink.innerText = 'Скрыть';
+                gohome1.style.display = 'none';
             } else {
                 adminPanel.style.height = '800px';
                 deleteForm.style.display = 'none';
                 deleteExLink.innerText = 'Удаление достопримечательностей';
+                gohome1.style.display = 'block';
             }
         });
     } else {

@@ -49,6 +49,9 @@ textarea {
 	height: 150px;
     border: 1px solid black;
     resize: none;
+    background: rgba(255, 255, 255, 0.069);
+    backdrop-filter: blur(8.8px);
+    -webkit-backdrop-filter: blur(8.8px);
 }
 
 input {
@@ -164,7 +167,6 @@ input {
     content: '';
 }
 form a i {
-    margin-left: 5px;
     font-size: 13px;
 }
 form a {
@@ -188,7 +190,7 @@ form a:active {
     letter-spacing: 1px;
     text-decoration: none;
     color: black;
-    font-weight: 500;
+    font-weight: 700;
     cursor: pointer;
     font-size: 13px;
 }
@@ -218,17 +220,15 @@ form a:active {
     text-align: center;
     width: 500px;
     height: 300px;
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.181);
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.181);
 }
 
 .password-win input {
-    font-family: "Montserrat", sans-serif;
     width: 180px;
     height: 30px;
-    font-size: 20px;
-    font-weight: 600;
+    font-size: 15px;
 }
 .password-win button {
     width: 250px;
@@ -247,7 +247,6 @@ form a:active {
     color: white;
 }
 .password-win .gohome i {
-    margin-left: 5px;
     font-size: 13px;
 }
 .password-win .gohome {
@@ -304,6 +303,7 @@ form a:active {
     border: none;
     background-color: #ff6868;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 .delete-ex-button-block button:hover {
     color: black;
@@ -332,4 +332,16 @@ form a:active {
 #deleteForm {
     display: none;
     flex-direction: column;
+}
+
+.delete-ex-id-block select {
+    font-family: "Montserrat", sans-serif;
+    width: 400px;
+    height: 30px;
+    border: 1px solid black;
+    font-weight: 500;
+}
+
+.delete-ex-id-block select option {
+    font-weight: 500;
 }

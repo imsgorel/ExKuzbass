@@ -415,3 +415,88 @@ body {
 #GoToAdminPanel:active {
     color: rgb(167, 167, 167);
 }
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        height: 150px;
+        font-size: 25px;
+        position: absolute;
+    }
+    .text-desc {
+        margin-top: 100px;
+        color: white;
+        font-weight: 600;
+        letter-spacing: 3px;
+        font-size: 45px;
+        white-space: pre;
+    }
+    .text-desc-block-2 {
+        width: 600px;
+    }
+    .startEx-button {
+        width: 300px;
+        height: 80px;
+    }
+
+    /*----ОСНОВА 1*/
+    .main-block-1 {
+        width: 100%;
+        height: 800px;
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin-top: 250px;
+    }
+    .descImgBlock {
+        flex-direction: column;
+    }
+    .site-desc-block {
+        display: flex;
+    }
+    .desc-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .sub-desc-block-1 {
+        width: 50%;
+        height: 600px;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        display: flex;
+        gap: 10px;
+    }
+    .sdb-1-text h2 {
+        font-size: 40px;
+        width: 100%;
+    }
+
+    .sub-desc-block-2 {
+        width: 600px;
+    }
+    .sdb-block-1 {
+        width: 100%;
+        height: 250px;
+        gap: 10px;
+        display: flex;
+    }
+    .sdb-block-sub {
+        width: 100%;
+        height: 20px;
+    }
+    .sdb-block-2 {
+        width: 100%;
+        height: 250px;
+        gap: 10px;
+        display: flex;
+    }
+    
+    .sheregesh-mountains {
+        width: 250px;
+        height: 250px;
+    }
+}

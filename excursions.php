@@ -29,19 +29,19 @@ if($query = $db->query("SELECT * FROM excursions")) {
 <body>
 
 <!-- ----------------------------------------- ШАПКА САЙТА --------------------------------------------------------- -->
-    <div class="head">
-    <div id="headbtn1" class="head-btn-underline"><a class="head-btn" href="index.html">Главная</a><div></div></div>
-    <div id="headbtn2" class="head-btn-underline"><a class="head-btn" href="excursions.php">Экскурсии</a><div></div></div>
-    </div>
+    <header class="head">
+        <div id="headbtn1" class="head-btn-underline"><a class="head-btn" href="index.html">Главная</a><div></div></div>
+        <div id="headbtn2" class="head-btn-underline"><a class="head-btn" href="excursions.php">Экскурсии</a><div></div></div>
+    </header>
 
 <!-- ----------------------------------------- ЗАГОЛОВОК И ОПИСАНИЕ ------------------------------------------------ -->
     <div class="main-block" id="MainBlock">
         <div class="main">
 
-            <h1 id="MainTitle">Список достопримечательностей</h1>
+                <h1 id="MainTitle">Список достопримечательностей</h1>
 
             <?php foreach ($info as $data): ?>
-            <div class="objectss">
+            <div class="excursion">
                 <img class="excursion-image" src="<?= $data['image'] ?>" alt="Загруженное изображение">
                 <h2 id="ExName-sample"><?= $data['name'] ?></h2>
                 <div class="description-block">
@@ -56,6 +56,11 @@ if($query = $db->query("SELECT * FROM excursions")) {
             <?php endforeach; ?>
 
         </div>
+    </div>
+
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <img class="modal-content" id="modal-img">
     </div>
 
 <!-- ----------------------------------------- ДОСТОПРИМЕЧАТЕЛЬНОСТИ ----------------------------------------------- -->
